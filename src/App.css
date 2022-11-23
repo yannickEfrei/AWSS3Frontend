@@ -12,27 +12,73 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  width: 500px;
+  height: 200px;
+  border: 4px dashed #ccc;
+}
+form p{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 170px;
+  color: #ffffff;
+  font-family: Arial;
+}
+form input{
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+form button{
+  margin: 0;
+  color: #fff;
+  background: #047dc6;
+  border: none;
+  width: 508px;
+  height: 35px;
+  margin-top: -20px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #035284;
+  transition: all .2s ease;
+  outline: none;
+}
+form button:hover{
+  background: #23597b;
+	color: #cdcdf9
+}
+form button:active{
+  border:0;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form p{
+  color:#05263a;
+}
+
+.status{font-weight: 600;font-size: 18px;}
+
+.success{color:green;}
+.fail{color: rgb(196, 21, 56);}
+
+#img-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  flex-wrap: wrap;
+  margin: 500px auto 100px;
+  max-width: 1000px;
+ }
+ 
+ #img-wrapper > div {
+  flex: 0 1 33%;
+  margin: 10px 0
+ }
